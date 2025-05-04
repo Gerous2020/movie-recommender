@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+:root {
+  --primayColour: #ffb22c;
+  --secondaryColour: #854836;
+  --optional: #efeeea;
+}
+body {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+p {
+  color: black;
+}
+.navBar {
+  width: 100%;
+  background-color: var(--primayColour);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  position: sticky;
+  z-index: 99999999999;
+  top: 0;
+}
+.header {
+  background: url(./Assests/4.jpg);
+  background-attachment: fixed;
+
+  color: var(--primayColour);
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.headContent {
+  font-size: 42px;
+  width: 1000px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#movieList {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#movieList div {
+  width: 300px;
+  height: 300px;
+}
+.movie-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  text-align: left;
+}
+h3 {
+  color: var(--secondaryColour);
+}
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--optional);
+  width: 400px;
+  color: white;
+  height: 300px;
+  z-index: 99999;
+  margin-top: 20px;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+}
+.recommadationson {
+  display: none;
+}
+.btns {
+  background-color: var(--primayColour);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.btns:hover {
+  background-color: #f0b540c4;
+}
