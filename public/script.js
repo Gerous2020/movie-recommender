@@ -2,10 +2,12 @@ let movies = [];
 let filteredMovies = [];
 
 // serverla fetch panrathuku
-fetch(
-  "http://localhost:5000/movies" ||
-    "https://movie-recommender-9n05.onrender.com/movies"
-)
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:5000"
+    : "https://movie-recommender-9n05.onrender.com";
+
+fetch(`${BASE_URL}/movies`)
   .then((response) => response.json())
   .then((data) => {
     movies = data;
