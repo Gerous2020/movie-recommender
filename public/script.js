@@ -2,7 +2,10 @@ let movies = [];
 let filteredMovies = [];
 
 // serverla fetch panrathuku
-fetch("http://localhost:5000/movies")
+fetch(
+  "http://localhost:5000/movies" ||
+    "https://movie-recommender-9n05.onrender.com/movies"
+)
   .then((response) => response.json())
   .then((data) => {
     movies = data;

@@ -10,6 +10,13 @@
   <body>
     <div class="navBar">
       <div class="logo">NM</div>
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search for a movie..."
+        oninput="filterMovies()"
+      />
+    </div>
     </div>
     <div class="header">
       <div class="headContent">
@@ -21,13 +28,7 @@
     <h1>Movie Recommender</h1>
 
     <div>
-      <input
-        type="text"
-        id="searchBar"
-        placeholder="Search for a movie..."
-        oninput="filterMovies()"
-      />
-    </div>
+      
 
     <div>
       <select id="movieSelect" onchange="selectMovie()">
